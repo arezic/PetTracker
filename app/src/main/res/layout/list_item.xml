@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    android:background="#DFD8D8">
+
+    <TextView
+        android:id="@+id/text_view_pet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="16dp"
+        android:textStyle="bold"
+        android:layout_weight="5"
+        android:text="Pet Name"/>
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:layout_weight="4"
+        android:text="selected"
+        android:textColor="@android:color/holo_green_dark"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/image_view_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_pet_data_menu"
+        android:paddingRight="16dp"
+        android:layout_weight="2"/>
+
+    
+
+</LinearLayout>

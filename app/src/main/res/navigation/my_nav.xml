@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/petFragment">
+
+    <fragment
+        android:id="@+id/petFragment"
+        android:name="com.antoniosoftware.pettracker.PetFragment"
+        android:label="Pet Data"
+        tools:layout="@layout/fragment_pet" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.antoniosoftware.pettracker.ActivityFragment"
+        android:label="Pet Activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.antoniosoftware.pettracker.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

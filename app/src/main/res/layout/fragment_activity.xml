@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".ActivityFragment">
+
+    <!-- delet 7 for phone-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/button_select_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_activity_pet_name"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PetName"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/text_view_tracking_time"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking Time: "
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp">
+
+        <TextView
+            android:id="@+id/text_view_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:text="Total Distance\n"/>
+
+        <TextView
+            android:id="@+id/text_view_average_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:text="Average Speed\n"/>
+
+        <TextView
+            android:id="@+id/text_view_highest_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:text="Highest Speed\n"/>
+    </LinearLayout>
+
+</FrameLayout>
